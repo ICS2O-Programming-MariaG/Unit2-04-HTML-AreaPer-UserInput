@@ -18,6 +18,8 @@
     <title>Area and Perimeter of a Triangle with User Input - Maria Goemans</title>
   </head>
   <body>
+    <!-- Link to JS file -->
+    <script src="./js/script.js"></script>
     <h1>Calculating the Area and Perimeter of a Triangle in JS with User Input</h1>
     <!-- Div container for image and introductory text -->
     <div id="image">
@@ -25,9 +27,28 @@
       <p>This webpage will use your input and the formulas outlined in the image below to calculate the area and perimeter of a triangle.</p>
       <img src="./images/triangle.png" alt="triangle formulas">
     </div>
-    <!-- Another div container for the user input and calculations -->
+    <!-- Another div container for the user input -->
     <div>
-      <h3>Your Input and Our Calculations:</h3>
+      <h3>Your Input:</h3>
+      <p>Write in the height and side lengths for a triangle below, and we'll calculate the triangle's area and perimeter!</p>
+      <form action="javascript:enterClicked()">
+        <label for="base">Length of the triangle's base</label>
+        <input type="number" id="base-length" placeholder="Base length" min="1"><br><br>
+        <label for="side-a">Another side length</label>
+        <input type="number" id="side-a-length" placeholder="Side length" min="1"><br><br>
+        <label for="side-c">Last side length</label>
+        <input type="number" id="side-c-length" placeholder="Last side length" min="1"><br><br>
+        <label for="height">Height of the triangle</label>
+        <input type="number" id="height" placeholder="Height" min="1"><br><br>
+        <input type="submit" value="Enter values">
+      </form>
+    </div>
+    <!-- Last div for style -->
+    <div>
+      <h3>Our Calculations:</h3>
+      <!-- Div for calculations -->
+      <div id="calculate">
+      </div>
     </div>
   </body>
 </html>
